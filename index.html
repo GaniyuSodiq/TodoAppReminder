@@ -45,6 +45,44 @@
            todos.splice(position, 1);
            displayTodo();
        }
+       
+       
+       //Toggle
+       function toggle(position){
+           if (todos[position].completed === true){
+               todos[position].completed = false;
+           } else{
+               todos[position].completed = true
+           }
+           
+           displayTodo();
+       }
+       
+       
+       //Toggle All
+       function toggleAll(){
+           
+           var completedTodos = 0;
+           
+           for (var i = 0; i < todos.length; i++){
+               if (todos[i].completed === true){
+                  completedTodos++; 
+               }
+           }
+           
+               if (completedTodos === todos.length){
+                   for (var i = 0; i < todos.length; i++){
+                       todos[i].completed = false;
+                   }
+               } else{
+                   for (var i = 0; i < todos.length; i++){
+                       todos[i].completed = true;
+                   }
+               }
+           
+           
+           displayTodo();
+       }
     </script>
     
 </body>
