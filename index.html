@@ -5,6 +5,18 @@
     <title>More On Todo App</title>
 </head>
 <body>
+  
+  <button id = 'displayTodosButton'>Display Todos</button> <br>
+  
+  <button id="toggleAllButton">Toggle All</button> <br>
+  
+  <button id="addTodoButton">Add Todo</button>
+  <input id="addTodoInput"> <br>
+  
+  <button id="editTodoButton">Edit Todo</button>
+  <input id="editTodoInputPosition">
+  <input id="editTodoInputNewTodo">
+  
    
    <script>
     
@@ -27,14 +39,18 @@
        
         
        // Add todos
-       function addTodo(newTodo){
+       function addTodo(){
+           var newTodo = document.getElementById("addTodoInput").value;
            todos.push({todoText:newTodo, completed: false});
+           newTodo = '';
            displayTodo();
        }
        
        
        // Edit todo
-       function editTodo(position, newEdit){
+       function editTodo(){
+           var position = document.getElementById("editTodoInputPosition").value;
+           var newEdit = document.getElementById("editTodoInputNewTodo").value;
            todos[position].todoText = newEdit;
            displayTodo();
        }
@@ -83,6 +99,29 @@
            
            displayTodo();
        }
+       
+       
+       
+       //Display Todos Button
+       var displayTodosButton = document.getElementById('displayTodosButton');
+       displayTodosButton.addEventListener('click', displayTodo);
+       
+       
+       
+       //Toggle All Button
+       var toggleAllButton = document.getElementById("toggleAllButton");
+       toggleAllButton.addEventListener('click', toggleAll);
+       
+       
+       //Add Todo Button
+       var addTodoButton = document.getElementById("addTodoButton");
+       addTodoButton.addEventListener('click', addTodo);
+       
+       
+       //Edit Todo Button
+       var editTodoButton = document.getElementById("editTodoButton");
+       editTodoButton.addEventListener('click', editTodo);
+       
     </script>
     
 </body>
