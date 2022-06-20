@@ -1,0 +1,30 @@
+Version 6
+[] It should have a function for toggling all todos.
+[] if everything is false ==> change everything to true.
+[] if everything is true ==> change everything to false.
+[] if mixed ==> change everything to true.
+
+Version 5
+[] It should have a function for displaying todos.
+[] displayTodos should have show the todoText and completetd properties
+
+Version 4
+[] It should have a function to Toggle a Todo
+
+Version 3
+[] We should Initialize the todos variable with objects
+[] The add function should add objects
+[] The edit function should edit objects
+
+Version 2
+[] It should have a function to add a Todo
+[] It should have a function to edit a Todo
+[] It should have a function to remove a Todo
+
+
+Version 1
+[] It should have a place to store Todos
+[] It should have a way to display Todos
+[] It should have a way to add a Todo
+[] It should have a way to edit a Todo
+[] It should have a way to remove a Todo
