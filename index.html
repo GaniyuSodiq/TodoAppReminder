@@ -42,7 +42,7 @@
        function addTodo(){
            var newTodo = document.getElementById("addTodoInput").value;
            todos.push({todoText:newTodo, completed: false});
-           newTodo = '';
+           document.getElementById("addTodoInput").value = '';
            displayTodo();
        }
        
