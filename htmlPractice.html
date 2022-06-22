@@ -1,5 +1,7 @@
 <style>
 
+    /* CHALLENGE 1 */
+    
     .title{
         font-family: Arial;
         font-weight: bold;
@@ -10,11 +12,38 @@
         color: green;
         font-weight: bold;
     }
+    
+    .cart{
+        background-color: rgb(255, 216, 20);
+        border: none;
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: opacity 0.15s, box-shadow .2s;
+
+    }
+    
+    .cart:active{
+        opacity: 0.5;
+         box-shadow: 0.3px .5px 5px black;
+    }
+    
+    .buy{
+        background-color: rgb(255, 164, 28);
+        border: none;
+        padding: 5px 25px;
+        border-radius: 30px;
+        transition: opacity 0.15s, box-shadow .2s;
+    }
+    .buy:active{
+        opacity: 0.5;
+         box-shadow: 0.3px .5px 5px black;
+    }
 
 </style>
 
 
-
+<!-- CHALLENGE 1 -->
 <a href = "amazon.com">Back to Amazon</a>
 
 
@@ -27,7 +56,7 @@
 <p>Free delivery tomorrow.</p>
 
 
-<button>Add to Cart</button>
+<button class="cart">Add to Cart</button>
 
 
-<button>Buy now</button>
+<button class="buy">Buy now</button>
